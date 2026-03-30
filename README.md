@@ -1,7 +1,9 @@
-# 豆包图像生成技能 (Doubao Image Generation Skill)
+# 豆包生图技能-龙虾 🦞 (Doubao Image Generation Skill)
 
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-blue)](https://openclaw.ai)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+> 🎨 一个强大的 OpenClaw 图像生成技能，使用火山引擎豆包 Seedream 5.0 API
 
 使用火山引擎豆包 Seedream 5.0 API 进行 AI 图像生成的 OpenClaw 技能。
 
