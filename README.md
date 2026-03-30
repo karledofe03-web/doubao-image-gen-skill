@@ -148,16 +148,13 @@ MIT License
 
 ### 大模型环境
 - **豆包模型**: `doubao-seedream-5-0-260128`
-- **API 版本**: v3
-- **API 端点**: `https://ark.cn-beijing.volces.com/api/v3/images/generations`
 
-### 依赖版本
-- `curl`: 任意版本（支持 HTTPS）
-- `jq`: 1.6+（推荐）
+### 依赖
+- `curl` - HTTP 请求工具
+- `jq` - JSON 解析工具（推荐）
 
-### 兼容性说明
+### 兼容性
 - ✅ 支持 macOS、Linux
-- ✅ 支持国内网络直接访问
 - ✅ 支持 OpenClaw 2026.3.x 及以上版本
 - ⚠️ 未来 OpenClaw 或豆包 API 更新时，可能需要更新技能
 
