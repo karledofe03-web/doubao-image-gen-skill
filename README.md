@@ -1,0 +1,108 @@
+# 豆包图像生成技能 (Doubao Image Generation Skill)
+
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-blue)](https://openclaw.ai)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+使用火山引擎豆包 Seedream 5.0 API 进行 AI 图像生成的 OpenClaw 技能。
+
+## ✨ 特点
+
+- 🎨 **高质量图像生成** - 使用豆包 Seedream 5.0 模型，效果精美
+- 🇨🇳 **国内服务** - 字节跳动火山引擎，无需代理，速度快
+- 📝 **中文支持** - 完美支持中文提示词
+- 🖼️ **文生图 + 图生图** - 支持生成和编辑图片
+- 📐 **多种尺寸** - 支持多种分辨率输出
+
+## 🚀 快速开始
+
+### 1. 安装技能
+
+将本技能文件夹复制到你的 OpenClaw 技能目录：
+
+```bash
+cp -r doubao-image-gen ~/.agents/
+```
+
+### 2. 配置 API Key
+
+在 `~/.openclaw/openclaw.json` 中添加配置：
+
+```json
+{
+  "skills": {
+    "doubao-image-gen": {
+      "enabled": true,
+      "env": {
+        "DOUBAO_API_KEY": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+### 3. 获取 API Key
+
+1. 访问 [火山引擎控制台](https://console.volcengine.com/)
+2. 进入「机器学习平台」→「火山方舟」
+3. 开通「图像生成」服务
+4. 创建 API Key
+
+### 4. 使用
+
+```bash
+# 文生图
+~/.agents/doubao-image-gen/scripts/doubao-generate.sh \
+  --prompt "一只可爱的猫咪" \
+  --output ~/images/cat.png
+
+# 指定尺寸
+~/.agents/doubao-image-gen/scripts/doubao-generate.sh \
+  --prompt "山水画" \
+  --width 1280 \
+  --height 720 \
+  --output ~/images/landscape.png
+```
+
+## 📖 使用示例
+
+### 卡通涂鸦风格
+```bash
+~/.agents/doubao-image-gen/scripts/doubao-generate.sh \
+  --prompt "可爱手绘涂鸦风格（Doodle Art Style）的信息图，手账本质感，米色复古纸张背景，暖色调。Q版卡通人物，软萌图标，手绘感线条" \
+  --output ~/images/doodle.png
+```
+
+### 写实风格
+```bash
+~/.agents/doubao-image-gen/scripts/doubao-generate.sh \
+  --prompt "写实风格的产品摄影，专业灯光，白色背景，8K高清" \
+  --output ~/images/product.png
+```
+
+## 🔧 依赖
+
+- `curl` - HTTP 请求
+- `jq` - JSON 解析
+
+macOS:
+```bash
+brew install curl jq
+```
+
+Ubuntu/Debian:
+```bash
+apt-get install curl jq
+```
+
+## 📄 许可证
+
+MIT License
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 🙏 致谢
+
+- [火山引擎](https://www.volcengine.com/) - 提供豆包大模型服务
+- [OpenClaw](https://openclaw.ai) - AI 助手框架
