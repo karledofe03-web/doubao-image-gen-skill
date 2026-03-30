@@ -131,6 +131,38 @@ MIT License
 
 欢迎提交 Issue 和 Pull Request！
 
+## 📋 环境信息
+
+> ⚠️ **注意**：本技能在以下环境中开发和测试，随着大模型和 OpenClaw 版本更新，可能需要相应调整。
+
+### 技能生成信息
+- **生成日期**: 2026-03-30
+- **作者**: karledofe03-web
+- **技能版本**: 1.0.0
+
+### OpenClaw 环境
+- **OpenClaw 版本**: 2026.3.28
+- **操作系统**: macOS 26.4 (Darwin 25.4.0 arm64)
+- **Node.js 版本**: v25.6.1
+- **Shell**: zsh
+
+### 大模型环境
+- **豆包模型**: `doubao-seedream-5-0-260128`
+- **API 版本**: v3
+- **API 端点**: `https://ark.cn-beijing.volces.com/api/v3/images/generations`
+
+### 依赖版本
+- `curl`: 任意版本（支持 HTTPS）
+- `jq`: 1.6+（推荐）
+
+### 兼容性说明
+- ✅ 支持 macOS、Linux
+- ✅ 支持国内网络直接访问
+- ✅ 支持 OpenClaw 2026.3.x 及以上版本
+- ⚠️ 未来 OpenClaw 或豆包 API 更新时，可能需要更新技能
+
+---
+
 ## 🙏 致谢
 
 - [火山引擎](https://www.volcengine.com/) - 提供豆包大模型服务
