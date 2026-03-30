@@ -17,7 +17,15 @@
 
 ## 🚀 快速开始
 
-### 1. 安装技能
+### 方式一：一键安装（推荐）
+
+复制下面这行命令，粘贴到终端运行：
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/karledofe03-web/doubao-image-gen-skill/main/install.sh | bash
+```
+
+### 方式二：手动安装
 
 将本技能文件夹复制到你的 OpenClaw 技能目录：
 
